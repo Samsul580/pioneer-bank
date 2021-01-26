@@ -15,8 +15,8 @@
         <h1 class="text-center m-5">Welcome to Pioneer Bank</h1>
         <section class="login-box bg-white rounded shadow-lg p-5">
             <h3 class="mb-3">Login</h3>
-            <input type="text" name="" id="" class="d-block w-100 mb-3 form-control" placeholder="Email">
-            <input type="password" name="" id="" class="d-block w-100 mb-3 form-control" placeholder="Password">
+            <input type="text" name="" class="d-block w-100 mb-3 form-control" placeholder="Email">
+            <input type="password" name="" class="d-block w-100 mb-3 form-control" placeholder="Password">
             <button id="login-btn" class="btn btn-success">Enter</button>
         </section>
     </section>
@@ -34,7 +34,7 @@
             <div class="col-md-4">
                 <div class="withdraw p-3 text-white">
                     <h5>Withdraw</h5>
-                    <h2>$ 00</h2>
+                    <h2>$ <span id="current-withdraw">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
@@ -56,9 +56,9 @@
             <div class="col-md-6">
                 <div class="withdraw-box shadow-lg rounded p-5">
                     <h4>Withdraw</h4>
-                    <input type="text" class="d-block w-100 my-3 form-control"
+                    <input id="withdraw-amount" type="text" class="d-block w-100 my-3 form-control"
                         placeholder="$ amount you want to withdraw">
-                    <button class="btn btn-success">Withdraw</button>
+                    <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
                 </div>
             </div>
         </div>
