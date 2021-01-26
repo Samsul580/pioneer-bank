@@ -11,24 +11,24 @@
 
 <body>
     <!-- login area section start -->
-    <section class="login-area container p-5 m-5">
+    <section id="login-area" class="login-area container p-5 m-5">
         <h1 class="text-center m-5">Welcome to Pioneer Bank</h1>
         <section class="login-box bg-white rounded shadow-lg p-5">
             <h3 class="mb-3">Login</h3>
             <input type="text" name="" id="" class="d-block w-100 mb-3 form-control" placeholder="Email">
             <input type="password" name="" id="" class="d-block w-100 mb-3 form-control" placeholder="Password">
-            <button class="btn btn-success">Enter</button>
+            <button id="login-btn" class="btn btn-success">Enter</button>
         </section>
     </section>
     <!-- login area section end -->
 
     <!-- transition area section start -->
-    <section class="transition container m-5 p-5">
+    <section id="transition-area" class="transition container m-5 p-5">
         <div class="row">
             <div class="col-md-4">
                 <div class="deposit p-3 text-white">
                     <h5>Deposit</h5>
-                    <h2>$ 00</h2>
+                    <h2>$ <span id="current-deposit">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
@@ -40,7 +40,7 @@
             <div class="col-md-4">
                 <div class="balance p-3 text-white">
                     <h5>Balance</h5>
-                    <h2>$ 00</h2>
+                    <h2>$ <span id="current-balance">1240</span></h2>
                 </div>
             </div>
         </div>
@@ -48,9 +48,9 @@
             <div class="col-md-6">
                 <div class="deposit-box shadow rounded p-5">
                     <h4>Deposit</h4>
-                    <input type="text" class="d-block w-100 my-3 form-control"
+                    <input id="deposit-amount" type="text" class="d-block w-100 my-3 form-control"
                         placeholder="$ amount you want to deposit">
-                    <button class="btn btn-success">Deposit</button>
+                    <button id="deposit-btn" class="btn btn-success">Deposit</button>
                 </div>
             </div>
             <div class="col-md-6">
