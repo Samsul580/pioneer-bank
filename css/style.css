@@ -1,0 +1,12 @@
+.deposit {
+    background-color: slateblue;
+    border-radius: 10px;
+}
+.withdraw {
+    background-color: lightsalmon;
+    border-radius: 10px;
+}
+.balance {
+    background-color: orange;
+    border-radius: 10px;
+}
