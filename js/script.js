@@ -16,14 +16,17 @@ depositBtn.addEventListener("click", function () {
     updateSpanText("current-balance", depositNumber);
     document.getElementById("deposit-amount").value = "";
 })
+
 // withdraw button handler
 const withdrawBtn = document.getElementById("withdraw-btn");
 withdrawBtn.addEventListener("click", function () {
     const withdrawAmount = document.getElementById("withdraw-amount").value;
     const withdrawNumber = parseFloat(withdrawAmount);
     updateSpanText("current-withdraw", withdrawNumber);
+    updateSpanText("current-balance", -1 * withdrawNumber);
     document.getElementById("withdraw-amount").value = "";
 })
+
 // span text handler
 function updateSpanText(id, depositNumber) {
     const Balance = document.getElementById(id).innerText;
